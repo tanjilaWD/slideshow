@@ -9,6 +9,7 @@ setInterval(() => {
 
   if (countElements > slideshowElements.length){
     slideshowElements[0].classList.add('current');
+    countElements = 1;
   } else{
     currentElement.nextElementSibling.classList.add('current');
 
