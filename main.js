@@ -1,13 +1,13 @@
 const slideshowElements = document.querySelectorAll('.slideshow-element');
  
-let currentElements = 1;
+let countElements = 1;
 
 setInterval(() => {
-    customElements ++;
+    countElements ++;
   let currentElement = document.querySelector('.current'); 
   currentElement.classList.remove('current');
 
-  if (currentElements > slideshowElements.length){
+  if (countElements > slideshowElements.length){
     slideshowElements[0].classList.add('current');
   } else{
     currentElement.nextElementSibling.classList.add('current');
